@@ -117,7 +117,8 @@ export default class Carousel extends Component {
     constructor (props) {
         super(props);
         this.state = {
-            activeItem: props.firstItem
+            activeItem: props.firstItem,
+            interpolators: []
         };
         this._positions = [];
         this._calcCardPositions(props);
